@@ -257,7 +257,6 @@ section.section3 .col-sm-3:hover .innercol * {
 section.section4 {
     padding: 40px 0;
 }
-
 section.section4 .mainheading {
     text-align: center;
     margin-bottom: 1.5rem;
@@ -518,16 +517,6 @@ section.section4 .col-sm-4:hover .innerproductsection img {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 0 1rem;
-}
-
-
-.promo-cards-bottom {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 1.5rem 1rem;
-    flex-wrap: wrap;
 }
 
 .promo-card {
@@ -918,11 +907,9 @@ footer.footer .row.copy-right p {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .promo-cards-bottom {
-        grid-template-columns: repeat(2, 1fr);
+    .promo-image {
+        height: 200px;
     }
-
-
 }
 
 @media (min-width: 768px) {
@@ -958,14 +945,9 @@ footer.footer .row.copy-right p {
         padding: 0 2rem;
     }
 
-    .promo-cards-bottom {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        padding: 0 2rem;
+    .promo-image {
+        height: 220px;
     }
-
-
-
 
     .advantages-list {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -985,10 +967,6 @@ footer.footer .row.copy-right p {
 @media (min-width: 1200px) {
     .promo-cards {
         grid-template-columns: repeat(4, 1fr);
-    }
-
-    .promo-cards-bottom {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1046,31 +1024,28 @@ footer.footer .row.copy-right p {
 
     #review .reviewinner {
         padding: 20px;
-        min-height: auto;
-        /* Remove fixed height on mobile */
+        min-height: auto; /* Remove fixed height on mobile */
     }
-
+    
     #review .reviewinner p {
-        -webkit-line-clamp: 3;
-        /* Show fewer lines on mobile */
+        -webkit-line-clamp: 3; /* Show fewer lines on mobile */
         line-clamp: 3;
         font-size: 14px;
     }
-
+    
     #review .single-testimonial-item {
-        margin: 0 10px;
-        /* Add some margin between items */
+        margin: 0 10px; /* Add some margin between items */
     }
-
+    
     #review .mainheading {
         font-size: 1.5rem;
     }
-
+    
     /* Ensure carousel takes full width on mobile */
     .client-testimonial-carousel .owl-stage-outer {
         overflow: visible;
     }
-
+    
     /* Add padding to prevent cutting */
     .client-testimonial-carousel {
         padding: 0 15px;
